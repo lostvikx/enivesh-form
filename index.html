@@ -14,30 +14,26 @@
   </header>
   
   <!-- personal info -->
-  <div id="personal-info">
+  <div>
     <h2>Personal Information</h2>
-    <form id="personal-info">
+    <form id="input-form" method="post">
       <table>
         <tr>
-          <th></th>
+          <th>Details</th>
           <th>Individual 1<span class="required">*</span></th>
-          <th>Individual 2</th>
         </tr>
         <tr>
           <td>First Name</td>
-          <td><input type="text" id="first-name" required></td>
-          <td><input type="text" id="first-name2"></td>
+          <td><input type="text" id="first-name" required name="firstName"></td>
         </tr>
         <tr>
           <td>Last Name</td>
-          <td><input type="text" id="last-name" required></td>
-          <td><input type="text" id="last-name2"></td>
+          <td><input type="text" id="last-name" required name="lastName"></td>
         </tr>
         <tr>
           <td>Date of Birth</td>
           <!-- TODO: add min and max to dates -->
-          <td><input type="date" id="dob" required></td>
-          <td><input type="date" id="dob2"></td>
+          <td><input type="date" id="dob" required name="dob"></td>
         </tr>
         <tr>
           <td>Gender</td>
@@ -48,31 +44,18 @@
               <option value="o">Other</option>
             </select>
           </td>
-          <td>
-            <select name="gender" id="gender2" required>
-              <option value="m">Male</option>
-              <option value="f">Female</option>
-              <option value="o">Other</option>
-            </select>
-          </td>
         </tr>
         <tr>
           <td>Smoker / Non-smoker</td>
           <td>
             <select name="smoker" id="smoker" required>
-              <option value="yes">Smoker</option>
-              <option value="no">Non-smoker</option>
-            </select>
-          </td>
-          <td>
-            <select name="smoker" id="smoker2" required>
-              <option value="yes">Smoker</option>
-              <option value="no">Non-smoker</option>
+              <option value="true">Smoker</option>
+              <option value="false">Non-smoker</option>
             </select>
           </td>
         </tr>
       </table>
-      <button type="submit">Test Submit</button>
+      <button type="submit" id="test-submit">Test Submit</button>
     </form>
   </div>
 
