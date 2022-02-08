@@ -22,23 +22,23 @@
       <table>
         <tr>
           <th>Details</th>
-          <th>Individual <span id="indi-count"></span><span id="required-star">*</span></th>
+          <th>Individual <span id="indi-count"></span></th>
         </tr>
         <tr>
-          <td>First Name</td>
+          <td>First Name<span id="required-star">*</span></td>
           <td><input type="text" id="first-name" required name="firstName"></td>
         </tr>
         <tr>
-          <td>Last Name</td>
+          <td>Last Name<span id="required-star">*</span></td>
           <td><input type="text" id="last-name" required name="lastName"></td>
         </tr>
         <tr>
-          <td>Date of Birth</td>
+          <td>Date of Birth<span id="required-star">*</span></td>
           <!-- TODO: add min and max to dates -->
           <td><input type="date" id="dob" required name="dob"></td>
         </tr>
         <tr>
-          <td>Gender</td>
+          <td>Gender<span id="required-star">*</span></td>
           <td>
             <select name="gender" id="gender" required>
               <option disabled selected value>Select Gender</option>
@@ -49,12 +49,12 @@
           </td>
         </tr>
         <tr>
-          <td>Smoker / Non-smoker</td>
+          <td>Do you smoke?<span id="required-star">*</span></td>
           <td>
             <select name="smoker" id="smoker" required>
               <option disabled selected value>Select Option</option>
-              <option value="false">Non-smoker</option>
-              <option value="true">Smoker</option>
+              <option value="false">No</option>
+              <option value="true">Yes</option>
             </select>
           </td>
         </tr>

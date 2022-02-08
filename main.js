@@ -5,7 +5,7 @@
 const form = document.getElementById("input-form");
 const count = document.getElementById("indi-count");
 const submitQuestionnaire = document.getElementById("submit-questionnaire");
-const star = document.getElementById("required-star");
+// const star = document.getElementById("required-star");
 
 // the total user data generated
 const totalUserData = {
