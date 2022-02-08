@@ -7,6 +7,7 @@ const count = document.getElementById("indi-count");
 const submitQuestionnaire = document.getElementById("submit-questionnaire");
 
 // the total user data generated
+// global variable
 const totalUserData = {
   personalInfo: [],
   // assetsLiab: [],
@@ -50,6 +51,8 @@ const saveData = (evt) => {
 
   form.reset();
 
+  console.log("data saved!");
+
   // // requires a server to test
   // const res = await fetch("/form-data", {
   //   method: "POST",
@@ -62,6 +65,19 @@ const saveData = (evt) => {
 }
 
 form.addEventListener("submit", evt => saveData(evt));
+
+// enable/disable date of marriage in personal-info form
+const maritalStatus = document.getElementById("marital-status");
+const marriageDate = document.getElementById("marriage-date");
+
+maritalStatus.addEventListener("change", (evt) => {
+  evt.preventDefault();
+  if (maritalStatus.value == "true") {
+    marriageDate.disabled = false;
+  } else {
+    marriageDate.disabled = true;
+  }
+});
 
 // submit the entire questionnaire
 submitQuestionnaire.addEventListener("click", evt => {
@@ -77,16 +93,3 @@ submitQuestionnaire.addEventListener("click", evt => {
   // }
 
 });
-
-// enable/disable date of marriage form input
-const maritalStatus = document.getElementById("marital-status");
-const marriageDate = document.getElementById("marriage-date");
-
-maritalStatus.addEventListener("change", (evt) => {
-  evt.preventDefault();
-  if (maritalStatus.value == "true") {
-    marriageDate.disabled = false;
-  } else {
-    marriageDate.disabled = true;
-  }
-})
