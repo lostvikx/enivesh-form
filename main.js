@@ -2,11 +2,15 @@
 
 // Testing code!
 const form = document.getElementById("input-form");
+const addIndividual = document.getElementById("add-individual");
+const count = document.getElementById("indi-count");
 
 // the total user data 
 const totalUserData = [];
+let individualCount = 1;
+count.textContent = individualCount;
 
-form.addEventListener("submit", async (evt) => {
+const addAnother = (evt) => {
 
   evt.preventDefault();
 
@@ -23,8 +27,9 @@ form.addEventListener("submit", async (evt) => {
   // console.log(userData);
 
   totalUserData.push(userData);
-
   console.log(totalUserData);
+  individualCount++;
+  count.textContent = individualCount;
 
   form.reset();
 
@@ -37,5 +42,14 @@ form.addEventListener("submit", async (evt) => {
   // const data = await res.json()
   // console.log(data);
 
-});
+}
 
+addIndividual.addEventListener("click", evt => addAnother(evt));
+
+form.addEventListener("submit", evt => {
+  
+  evt.preventDefault();
+
+  console.log("next form please!")
+
+});
