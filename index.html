@@ -70,25 +70,48 @@
 
       <label for="retirement-age">
         Desired Retirement Age<span id="required-star">*</span>
-        <input type="number" name="retirementAge" id="retirement-age" max="100" min="10">
+        <input type="number" name="retirementAge" id="retirement-age" max="100" min="10" required>
       </label>
 
       <label for="life-exp">
         Life Expectancy Age<span id="required-star">*</span>
-        <input type="number" name="lifeExp" id="life-exp">
+        <input type="number" name="lifeExp" id="life-exp" max="100" min="10" required>
       </label>
 
       <label for="home-address">
         Home Address<span id="required-star">*</span>
-        <textarea name="homeAddress" id="home-address" cols="20" rows="3" maxlength="100"></textarea>
+        <textarea name="homeAddress" id="home-address" cols="20" rows="3" maxlength="100" required></textarea>
       </label>
 
+      <label for="mobile-num">
+        Mobile No.<span id="required-star">*</span>
+        <select name="coutryCode" id="country-code" required>
+          <option value selected disabled>Country Code</option>
+          <option value="+91">+91</option>
+        </select>
+        <input type="tel" name="mobileNum" id="mobile-num" required minlength="10" maxlength="10">
+      </label>
 
+      <label for="email">
+        Email<span id="required-star">*</span>
+        <input type="email" name="email" id="email" required>
+      </label>
+
+      <label for="company">
+        Company<span id="required-star">*</span>
+        <input type="text" name="company" id="company" required>
+      </label>
+
+      <label for="designation">
+        Designation<span id="required-star">*</span>
+        <input type="text" name="designation" id="designation" required>
+      </label>
 
       <button type="submit" id="add-individual">Save Data</button>
     </form>
   </div>
 
+  <!-- assets & liabilities -->
   <div class="flex-form">
     
     <form id="assetsLiab" class="input-form">

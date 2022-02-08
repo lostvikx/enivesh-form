@@ -35,7 +35,7 @@ for (const [index, form] of forms.entries()) {
     }
   }
 
-  console.log(individualCount)
+  // console.log(individualCount);
 
   // saves an userData obj in the totalUserData
   // params: evt: on-submit event, form: form Element, count: span count element, individualCount: number or string (count span text content)
