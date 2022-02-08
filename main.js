@@ -1,23 +1,30 @@
 "use strict";
 
-// Testing code!
-const form = document.getElementById("input-form");
-const addIndividual = document.getElementById("add-individual");
-const count = document.getElementById("indi-count");
+// TODO: notify after data saved
 
-// the total user data 
-const totalUserData = [];
+const form = document.getElementById("input-form");
+const count = document.getElementById("indi-count");
+const submitQuestionnaire = document.getElementById("submit-questionnaire");
+const star = document.getElementById("required-star");
+
+// the total user data generated
+const totalUserData = {
+  personalInfo: []
+};
+
 let individualCount = 1;
 count.textContent = individualCount;
 
-const addAnother = (evt) => {
+const saveData = (evt) => {
 
   evt.preventDefault();
 
   const userData = {};
 
+  // gets the entire data from the input-form
   const formData = new FormData(form);
 
+  // adds the form data to the userData object
   for (const data of formData) {
     const label = data[0];
     const value = data[1];
@@ -26,8 +33,10 @@ const addAnother = (evt) => {
 
   // console.log(userData);
 
-  totalUserData.push(userData);
+  totalUserData.personalInfo.push(userData);
   console.log(totalUserData);
+
+  // visual change
   individualCount++;
   count.textContent = individualCount;
 
@@ -44,12 +53,19 @@ const addAnother = (evt) => {
 
 }
 
-addIndividual.addEventListener("click", evt => addAnother(evt));
+form.addEventListener("submit", evt => saveData(evt));
 
-form.addEventListener("submit", evt => {
+// submit the entire questionnaire
+submitQuestionnaire.addEventListener("click", evt => {
   
   evt.preventDefault();
 
-  console.log("next form please!")
+  // work on this later
+  // if (totalUserData.personalInfo.length < 1) {
+  //   alert("Please fill out the form for atleast 1 individual!");
+  // } else {
+  //   // http redirect
+  //   window.location.replace("https://gitbub.com/lostvikx");
+  // }
 
 });

@@ -4,6 +4,6 @@
   box-sizing: border-box;
 } */
 
-.required {
+#required-star {
   color: red;
 }

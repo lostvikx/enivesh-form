@@ -12,6 +12,8 @@
   <header>
     <h1>Enivesh Goal Organizer Questionnaire</h1>
   </header>
+
+  <!-- form format: div > h2 & form > table -->
   
   <!-- personal info -->
   <div>
@@ -20,7 +22,7 @@
       <table>
         <tr>
           <th>Details</th>
-          <th>Individual <span id="indi-count"></span><span class="required">*</span></th>
+          <th>Individual <span id="indi-count"></span><span id="required-star">*</span></th>
         </tr>
         <tr>
           <td>First Name</td>
@@ -39,6 +41,7 @@
           <td>Gender</td>
           <td>
             <select name="gender" id="gender" required>
+              <option disabled selected value>Select Gender</option>
               <option value="m">Male</option>
               <option value="f">Female</option>
               <option value="o">Other</option>
@@ -49,23 +52,27 @@
           <td>Smoker / Non-smoker</td>
           <td>
             <select name="smoker" id="smoker" required>
-              <option value="true">Smoker</option>
+              <option disabled selected value>Select Option</option>
               <option value="false">Non-smoker</option>
+              <option value="true">Smoker</option>
             </select>
           </td>
         </tr>
-        <tr>
-          <td>
-            <button type="button" id="add-individual">Add Another Individual</button>
-          </td>
-          <td>
-            <button type="submit" id="test-submit">Next -></button>
-          </td>
-        </tr>
       </table>
-
+      <button type="submit" id="add-individual">Save</button>
     </form>
   </div>
+
+  <div>
+    <h2>Assets & Liabilities</h2>
+    <form>
+      <table>
+
+      </table>
+    </form>
+  </div>
+
+  <button type="button" id="submit-questionnaire">Submit Questionnaire</button>
 
   <script src="./main.js"></script>
 </body>
