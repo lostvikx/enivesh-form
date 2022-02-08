@@ -8,3 +8,15 @@
   color: red;
   font-size: 0.8rem;
 }
+
+form {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.flex-form {
+  margin: 2rem;
+}
