@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enivesh Form</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Enivesh Goal Organizer Questionnaire</h1>
+  </header>
+  
+  <!-- personal info -->
+  <div id="personal-info">
+    <h2>Personal Information</h2>
+    <form id="personal-info">
+      <table>
+        <tr>
+          <th></th>
+          <th>Individual 1<span class="required">*</span></th>
+          <th>Individual 2</th>
+        </tr>
+        <tr>
+          <td>First Name</td>
+          <td><input type="text" id="first-name" required></td>
+          <td><input type="text" id="first-name2"></td>
+        </tr>
+        <tr>
+          <td>Last Name</td>
+          <td><input type="text" id="last-name" required></td>
+          <td><input type="text" id="last-name2"></td>
+        </tr>
+        <tr>
+          <td>Date of Birth</td>
+          <!-- TODO: add min and max to dates -->
+          <td><input type="date" id="dob" required></td>
+          <td><input type="date" id="dob2"></td>
+        </tr>
+        <tr>
+          <td>Gender</td>
+          <td>
+            <select name="gender" id="gender" required>
+              <option value="m">Male</option>
+              <option value="f">Female</option>
+              <option value="o">Other</option>
+            </select>
+          </td>
+          <td>
+            <select name="gender" id="gender2" required>
+              <option value="m">Male</option>
+              <option value="f">Female</option>
+              <option value="o">Other</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Smoker / Non-smoker</td>
+          <td>
+            <select name="smoker" id="smoker" required>
+              <option value="yes">Smoker</option>
+              <option value="no">Non-smoker</option>
+            </select>
+          </td>
+          <td>
+            <select name="smoker" id="smoker2" required>
+              <option value="yes">Smoker</option>
+              <option value="no">Non-smoker</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+      <button type="submit">Test Submit</button>
+    </form>
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+</html>
