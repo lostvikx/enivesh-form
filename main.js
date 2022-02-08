@@ -5,11 +5,19 @@
 const form = document.getElementById("input-form");
 const count = document.getElementById("indi-count");
 const submitQuestionnaire = document.getElementById("submit-questionnaire");
-// const star = document.getElementById("required-star");
 
 // the total user data generated
 const totalUserData = {
-  personalInfo: []
+  personalInfo: [],
+  // assetsLiab: [],
+  // lifeInsurance: [],
+  // mediclaim: [],
+  // childEdu: [],
+  // pensionIncome: [],
+  // otherIncome: [],
+  // rentalRealEstate: [],
+  // personalExp: [],
+  // largeExp: []
 };
 
 let individualCount = 1;
@@ -69,3 +77,16 @@ submitQuestionnaire.addEventListener("click", evt => {
   // }
 
 });
+
+// enable/disable date of marriage form input
+const maritalStatus = document.getElementById("marital-status");
+const marriageDate = document.getElementById("marriage-date");
+
+maritalStatus.addEventListener("change", (evt) => {
+  evt.preventDefault();
+  if (maritalStatus.value == "true") {
+    marriageDate.disabled = false;
+  } else {
+    marriageDate.disabled = true;
+  }
+})

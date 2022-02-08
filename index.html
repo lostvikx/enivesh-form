@@ -54,7 +54,38 @@
         </select>
       </label>
 
-      <button type="submit" id="add-individual">Save</button>
+      <label for="marital-status">
+        Marital Status<span id="required-star">*</span>
+        <select name="married" id="marital-status">
+          <option disabled selected value>Select Option</option>
+          <option value="true">Married</option>
+          <option value="false">Unmarried</option>
+        </select>
+      </label>
+
+      <label for="marriage-date">
+        Date of Marriage
+        <input type="date" id="marriage-date" required name="marriageDate" disabled>
+      </label>
+
+      <label for="retirement-age">
+        Desired Retirement Age<span id="required-star">*</span>
+        <input type="number" name="retirementAge" id="retirement-age" max="100" min="10">
+      </label>
+
+      <label for="life-exp">
+        Life Expectancy Age<span id="required-star">*</span>
+        <input type="number" name="lifeExp" id="life-exp">
+      </label>
+
+      <label for="home-address">
+        Home Address<span id="required-star">*</span>
+        <textarea name="homeAddress" id="home-address" cols="20" rows="3" maxlength="100"></textarea>
+      </label>
+
+      
+
+      <button type="submit" id="add-individual">Save Data</button>
     </form>
   </div>
 
