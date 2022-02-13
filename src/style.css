@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+#required-star {
+  color: red;
+  font-size: 0.8rem;
+}
+
+form {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.flex-form {
+  margin: 2rem;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2rem;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+th, td {
+  padding: 0.25em;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#display-details {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
