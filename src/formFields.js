@@ -237,7 +237,8 @@ const fields = {
   pensionIncome: [],
   otherIncome: [],
   rentalRealEstate: [],
-  personalExpenses: []
+  personalExpenses: [],
+  largeExpenditure: []
 };
 
 export default fields;

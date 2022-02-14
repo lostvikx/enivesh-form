@@ -7,6 +7,7 @@ const totalUserData = {};
 export default function Form(props) {
 
 const handleSubmit = (evt) => {
+
   evt.preventDefault();
   const userData = {};
 
@@ -28,6 +29,7 @@ const handleSubmit = (evt) => {
   totalUserData[props.formId].push(userData);
   console.log(totalUserData);
   evt.target.reset();
+  
 }
 
   const inputFields = fields[props.formId].map(field => <FormField data={field} key={field.key} />);
@@ -38,5 +40,5 @@ const handleSubmit = (evt) => {
       { inputFields }
       <button type="submit">Save</button>
     </form>
-  )
+  );
 }

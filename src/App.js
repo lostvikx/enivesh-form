@@ -1,6 +1,6 @@
 import React from "react";
 import Form from "./components/Form";
-import SendBtn from "./components/SendBtn"
+import SendBtn from "./components/SendBtn";
 
 export default function App() {
   return (
@@ -13,6 +13,12 @@ export default function App() {
         <Form formName="Other Assets" formId="otherAssets" />
         <Form formName="Life Insurance" formId="lifeInsurance" />
         <Form formName="Mediclaim" formId="mediclaim" />
+        <Form formName="Children &amp; College Planning" formId="childrenEducation" />
+        <Form formName="Pension Income" formId="pensionIncome" />
+        <Form formName="Other Income" formId="otherIncome" />
+        <Form formName="Rental Real Estate" formId="rentalRealEstate" />
+        <Form formName="Personal Expenses" formId="personalExpenses" />
+        <Form formName="Large Expenditure" formId="largeExpenditure" />
       </div>
       <SendBtn />
     </>
