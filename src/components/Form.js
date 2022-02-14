@@ -2,14 +2,16 @@ import React from "react";
 import FormField from "./FormField";
 import fields from "../formFields";
 
-const inputFields = fields.map(field => <FormField data={field} key={field.id} />);
+const totalUserData = {};
+
+export default function Form(props) {
 
 const handleSubmit = (evt) => {
   evt.preventDefault();
   const userData = {};
 
   // gets the entire data from the input-form
-  const formData = new FormData(document.getElementById("personal-info"));
+  const formData = new FormData(evt.target);
 
   // adds the form data to the userData object
   for (const data of formData) {
@@ -18,16 +20,23 @@ const handleSubmit = (evt) => {
     userData[label] = value;
   }
 
-  console.log(userData);
+  if (totalUserData[props.formId] == null) {
+    totalUserData[props.formId] = [];
+  }
+
+  // console.log(userData);
+  totalUserData[props.formId].push(userData);
+  console.log(totalUserData);
+  evt.target.reset();
 }
 
-export default function Form(props) {
+  const inputFields = fields[props.formId].map(field => <FormField data={field} key={field.key} />);
 
   return (
-    <form id="personal-info" onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit}>
       <legend>{props.formName}:</legend>
       { inputFields }
-      <button type="submit" id="add-individual">Save</button>
+      <button type="submit">Save</button>
     </form>
   )
 }
