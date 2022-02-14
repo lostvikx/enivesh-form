@@ -2,7 +2,6 @@ import React from "react";
 
 // field.props = {
 //   labelName: ...
-//   labelFor: ...
 //   inputType: ...
 //   inputName: ...
 // }
@@ -27,18 +26,18 @@ export default function FormField(props) {
   }
 
   const select = (
-    <select id={data.labelFor} name={data.inputName}>
+    <select id={data.inputName} name={data.inputName} defaultValue="">
       {options}
     </select>
   );
 
   return (
-    <label htmlFor={data.labelFor}>
+    <label htmlFor={data.inputName}>
       {data.labelName}<span id="required-star">* </span>
       {
         (data.inputType == "select") 
           ? select 
-          : <input type={data.inputType} name={data.inputName} id={data.labelFor} />
+          : <input type={data.inputType} name={data.inputName} id={data.inputName} />
       }
     </label>
   );

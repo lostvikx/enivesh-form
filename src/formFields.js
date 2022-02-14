@@ -3,28 +3,24 @@ const fields = {
     {
       key: 1,
       labelName: "First Name",
-      labelFor: "first-name",
       inputType: "text",
       inputName: "firstName"
     },
     {
       key: 2,
       labelName: "Last Name",
-      labelFor: "last-name",
       inputType: "text",
       inputName: "lastName"
     },
     {
       key: 3,
       labelName: "Date of Birth",
-      labelFor: "dob",
       inputType: "date",
       inputName: "dob"
     },
     {
       key: 4,
       labelName: "Gender",
-      labelFor: "gender",
       inputType: "select",
       inputName: "gender",
       options: ["Male", "Female", "Other"]
@@ -32,24 +28,82 @@ const fields = {
     {
       key: 5,
       labelName: "Smoker",
-      labelFor: "smoker",
       inputType: "select",
       inputName: "smoker",
       options: ["No", "Yes"]
-    }
+    },
+    {
+      key: 6,
+      labelName: "Marital Status",
+      inputType: "select",
+      inputName: "maritalStatus",
+      options: ["Married", "Unmarried"]
+    },
+    {
+      key: 7,
+      labelName: "Date of Marriage",
+      inputType: "date",
+      inputName: "dateOfMarriage"
+    },
+    {
+      key: 8,
+      labelName: "Desired Retirement Age",
+      inputType: "number",
+      inputName: "desiredRetirementAge"
+    },
+    {
+      key: 9,
+      labelName: "Life Expectancy Age",
+      inputType: "number",
+      inputName: "lifeExpectancyAge"
+    },
+    {
+      key: 10,
+      labelName: "Home Address",
+      inputType: "text",
+      inputName: "homeAddress"
+    },
+    {
+      key: 11,
+      labelName: "City",
+      inputType: "text",
+      inputName: "city"
+    },
+    {
+      key: 12,
+      labelName: "Phone Number",
+      inputType: "number",
+      inputName: "phoneNumber"
+    },
+    {
+      key: 13,
+      labelName: "Email",
+      inputType: "email",
+      inputName: "email"
+    },
+    {
+      key: 14,
+      labelName: "Employer",
+      inputType: "text",
+      inputName: "employer"
+    },
+    {
+      key: 15,
+      labelName: "Designation",
+      inputType: "text",
+      inputName: "designation"
+    },
   ],
   liquidAssets: [
     {
       key: 1,
       labelName: "Bank Account",
-      labelFor: "bank-acc",
       inputType: "number",
       inputName: "bankBal"
     },
     {
       key: 2,
       labelName: "Cash Bank FD's",
-      labelFor: "cash-bank",
       inputType: "number",
       inputName: "bankFd"
     }
@@ -58,21 +112,18 @@ const fields = {
     {
       key: 1,
       labelName: "Mutual Funds",
-      labelFor: "mutual-funds",
       inputType: "number",
       inputName: "mutualFunds"
     },
     {
       key: 2,
       labelName: "Equity Shares",
-      labelFor: "equity-shares",
       inputType: "number",
       inputName: "equityShares"
     },
     {
       key: 3,
       labelName: "Other Investments",
-      labelFor: "other-investments",
       inputType: "number",
       inputName: "otherInvestments"
     }
@@ -81,42 +132,36 @@ const fields = {
     {
       key: 1,
       labelName: "Principal Residence",
-      labelFor: "principal-residence",
       inputType: "number",
       inputName: "principalResidence"
     },
     {
       key: 2,
       labelName: "Other Properties",
-      labelFor: "other-properties",
       inputType: "number",
       inputName: "otherProperties"
     },
     {
       key: 3,
       labelName: "Car",
-      labelFor: "car",
       inputType: "number",
       inputName: "car"
     },
     {
       key: 4,
       labelName: "Furnishings & Contents",
-      labelFor: "furnishings-contents",
       inputType: "number",
       inputName: "furnishingsContents"
     },
     {
       key: 5,
       labelName: "Jewellery",
-      labelFor: "jewellery",
       inputType: "number",
       inputName: "jewellery"
     },
     {
       key: 6,
       labelName: "Other Fixed Assets",
-      labelFor: "other-fixed-assets",
       inputType: "number",
       inputName: "otherFixedAssets"
     }
@@ -125,21 +170,18 @@ const fields = {
     {
       key: 1,
       labelName: "Loans Given",
-      labelFor: "loans-given",
       inputType: "number",
       inputName: "loansGiven"
     },
     {
       key: 2,
       labelName: "Other Investments",
-      labelFor: "other-investments",
       inputType: "number",
       inputName: "otherInvestments"
     },
     {
       key: 3,
       labelName: "Non Liquid",
-      labelFor: "non-liquid",
       inputType: "number",
       inputName: "nonLiquid"
     },
@@ -148,21 +190,18 @@ const fields = {
     {
       key: 1,
       labelName: "Term | ULIP | Traditional",
-      labelFor: "term-plan",
       inputType: "number",
       inputName: "termPlan"
     },
     {
       key: 2,
       labelName: "Insurance Company",
-      labelFor: "insurance-company",
       inputType: "text",
       inputName: "insuranceCompany"
     },
     {
       key: 3,
       labelName: "Insured",
-      labelFor: "insured",
       inputType: "select",
       inputName: "insured",
       options: ["Yes", "No"]
@@ -170,28 +209,24 @@ const fields = {
     {
       key: 4,
       labelName: "Start Date",
-      labelFor: "insurace-start-date",
       inputType: "date",
       inputName: "insuraceStartDate"
     },
     {
       key: 5,
       labelName: "Annual Premium",
-      labelFor: "insurance-annual-premium",
       inputType: "number",
       inputName: "insuranceAnnualPremium"
     },
     {
       key: 6,
       labelName: "Sum Assured",
-      labelFor: "insurance-sum-assured",
       inputType: "number",
       inputName: "insuranceSumAssured"
     },
     {
       key: 7,
       labelName: "Death Benefit",
-      labelFor: "death-benefit",
       inputType: "number",
       inputName: "deathBenefit"
     },
@@ -200,42 +235,130 @@ const fields = {
     {
       key: 1,
       labelName: "Floater | Individual | Critical Illness",
-      labelFor: "critical-illness",
       inputType: "text",
       inputName: "criticalIllness"
     },
     {
       key: 2,
       labelName: "Insurance Company",
-      labelFor: "mediclaim-insurance-company",
       inputType: "text",
       inputName: "mediclaimInsuranceCompany"
     },
     {
       key: 3,
       labelName: "Start Date",
-      labelFor: "mediclaim-start-date",
       inputType: "date",
       inputName: "mediclaimStartDate"
     },
     {
       key: 4,
       labelName: "Annual Permium",
-      labelFor: "annual-permium",
       inputType: "number",
       inputName: "annualPermium"
     },
     {
       key: 5,
       labelName: "Sum Assured",
-      labelFor: "mediclaim-sum-assured",
       inputType: "number",
       inputName: "mediclaimSumAssured"
     },
   ],
-  childrenEducation: [],
-  pensionIncome: [],
-  otherIncome: [],
+  childrenEducation: [
+    {
+      key: 1,
+      labelName: "Name",
+      inputType: "text",
+      inputName: "childName"
+    },
+    {
+      key: 2,
+      labelName: "Birth Date",
+      inputType: "date",
+      inputName: "childBirthDate"
+    },
+    {
+      key: 3,
+      labelName: "Year of College",
+      inputType: "number",
+      inputName: "yearCollege"
+    },
+    {
+      key: 4,
+      labelName: "Course Fee",
+      inputType: "date",
+      inputName: "childCourseFee"
+    },
+  ],
+  pensionIncome: [
+    {
+      key: 1,
+      labelName: "Name",
+      inputType: "text",
+      inputName: "pensionName"
+    },
+    {
+      key: 2,
+      labelName: "Company Providing Benefit",
+      inputType: "text",
+      inputName: "pensionCompany"
+    },
+    {
+      key: 3,
+      labelName: "Monthly Benefit",
+      inputType: "number",
+      inputName: "pensionMonthlyBenefit"
+    },
+    {
+      key: 4,
+      labelName: "Cost of Living Adjustment",
+      inputType: "number",
+      inputName: "pensionCostOfLivingAdj"
+    },
+    {
+      key: 5,
+      labelName: "Amount of Lump Sum",
+      inputType: "number",
+      inputName: "pensionLumpSum"
+    },
+  ],
+  otherIncome: [
+    {
+      key: 1,
+      labelName: "Name",
+      inputType: "text",
+      inputName: "otherIncomeName"
+    },
+    {
+      key: 2,
+      labelName: "Income Description",
+      inputType: "text",
+      inputName: "icomeDescription"
+    },
+    {
+      key: 3,
+      labelName: "Annual Amount",
+      inputType: "number",
+      inputName: "annualAmount"
+    },
+    {
+      key: 4,
+      labelName: "Annual Increase/Decrease",
+      inputType: "number",
+      inputName: "annualChange"
+    },
+    {
+      key: 5,
+      labelName: "Beginning Age",
+      inputType: "date",
+      inputName: "beginningAge"
+    },
+    {
+      key: 6,
+      labelName: "Ending Age",
+      inputType: "date",
+      inputName: "endingAge"
+    },
+  ],
   rentalRealEstate: [],
   personalExpenses: [],
   largeExpenditure: []
