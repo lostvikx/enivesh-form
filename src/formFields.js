@@ -359,7 +359,38 @@ const fields = {
       inputName: "endingAge"
     },
   ],
-  rentalRealEstate: [],
+  rentalRealEstate: [
+    {
+      key: 1,
+      labelName: "Property Name",
+      inputType: "text",
+      inputName: "propertyName"
+    },
+    {
+      key: 2,
+      labelName: "City",
+      inputType: "text",
+      inputName: "propertyCity"
+    },
+    {
+      key: 3,
+      labelName: "Purchase Price",
+      inputType: "number",
+      inputName: "propertyPurchasePrice"
+    },
+    {
+      key: 4,
+      labelName: "Current Market Value",
+      inputType: "number",
+      inputName: "propertyMarketValue"
+    },
+    {
+      key: 5,
+      labelName: "Annual Rent",
+      inputType: "number",
+      inputName: "propertyAnnualRent"
+    },
+  ],
   personalExpenses: [],
   largeExpenditure: []
 };
