@@ -391,7 +391,169 @@ const fields = {
       inputName: "propertyAnnualRent"
     },
   ],
-  personalExpenses: [],
+  personalExpenses: [
+    {
+      key: 1,
+      labelName: "Rent",
+      inputType: "number",
+      inputName: "rent"
+    },
+    {
+      key: 2,
+      labelName: "Groceries & Household Supplies",
+      inputType: "number",
+      inputName: "groceries"
+    },
+    {
+      key: 3,
+      labelName: "Eating Out",
+      inputType: "number",
+      inputName: "eatingOut"
+    },
+    {
+      key: 4,
+      labelName: "Utilities",
+      inputType: "number",
+      inputName: "utilities"
+    },
+    {
+      key: 5,
+      labelName: "Mobile Network Services",
+      inputType: "number",
+      inputName: "mobileNetwork"
+    },
+    {
+      key: 6,
+      labelName: "Fuel (for automobiles)",
+      inputType: "number",
+      inputName: "fuel"
+    },
+    {
+      key: 7,
+      labelName: "Automobile Maintenance",
+      inputType: "number",
+      inputName: "automobiileMaintenance"
+    },
+    {
+      key: 8,
+      labelName: "Activities/Recreation",
+      inputType: "number",
+      inputName: "recreation"
+    },
+    {
+      key: 9,
+      labelName: "Day Care",
+      inputType: "number",
+      inputName: "dayCare"
+    },
+    {
+      key: 10,
+      labelName: "Gifts",
+      inputType: "number",
+      inputName: "gifts"
+    },
+    {
+      key: 11,
+      labelName: "Domestic Help",
+      inputType: "number",
+      inputName: "domesticHelp"
+    },
+    {
+      key: 12,
+      labelName: "Clothing",
+      inputType: "number",
+      inputName: "clothing"
+    },
+    {
+      key: 13,
+      labelName: "Home Maintenance",
+      inputType: "number",
+      inputName: "homeMaintenance"
+    },
+    {
+      key: 14,
+      labelName: "Home Furnishing",
+      inputType: "number",
+      inputName: "homeFurnishing"
+    },
+    {
+      key: 15,
+      labelName: "Child Support",
+      inputType: "number",
+      inputName: "childSupport"
+    },
+    {
+      key: 16,
+      labelName: "Alimony",
+      inputType: "number",
+      inputName: "alimony"
+    },
+    {
+      key: 17,
+      labelName: "Entertainment",
+      inputType: "number",
+      inputName: "entertainment"
+    },
+    {
+      key: 18,
+      labelName: "Vacations",
+      inputType: "number",
+      inputName: "vacations"
+    },
+    {
+      key: 19,
+      labelName: "Hobbies",
+      inputType: "number",
+      inputName: "hobbies"
+    },
+    {
+      key: 20,
+      labelName: "Gym Membership",
+      inputType: "number",
+      inputName: "gymMembership"
+    },
+    {
+      labelName: "Alimony",
+      inputType: "number",
+      inputName: "alimony"
+    },
+    {
+      key: 22,
+      labelName: "Alimony",
+      inputType: "number",
+      inputName: "alimony"
+    },
+    {
+      key: 23,
+      labelName: "Alimony",
+      inputType: "number",
+      inputName: "alimony"
+    },
+    {
+      key: 24,
+      labelName: "Alimony",
+      inputType: "number",
+      inputName: "alimony"
+    },
+    {
+      key: 25,
+      labelName: "Alimony",
+      inputType: "number",
+      inputName: "alimony"
+    },
+    {
+      key: 26,
+      labelName: "Alimony",
+      inputType: "number",
+      inputName: "alimony"
+    },
+    {
+      key: 27,
+      labelName: "Alimony",
+      inputType: "number",
+      inputName: "alimony"
+    },
+  ],
   largeExpenditure: []
 };
 

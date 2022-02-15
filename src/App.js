@@ -17,7 +17,7 @@ export default function App() {
         <Form formName="Pension Income" formId="pensionIncome" />
         <Form formName="Other Income" formId="otherIncome" />
         <Form formName="Rental Real Estate" formId="rentalRealEstate" />
-        <Form formName="Personal Expenses" formId="personalExpenses" />
+        <Form formName="Personal Expenses (Monthly)" formId="personalExpenses" />
         <Form formName="Large Expenditure" formId="largeExpenditure" />
       </div>
       <SendBtn />

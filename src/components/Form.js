@@ -32,7 +32,7 @@ const handleSubmit = (evt) => {
   
 }
 
-  const inputFields = fields[props.formId].map(field => <FormField data={field} key={field.key} />);
+  const inputFields = fields[props.formId].map((field, key) => <FormField data={field} key={key} />);
 
   return (
     <form onSubmit={handleSubmit}>
