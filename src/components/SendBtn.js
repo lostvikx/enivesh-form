@@ -19,7 +19,7 @@ const handleClick = async (evt) => {
 
   console.log("Data saved to DB 🎉");
 
-  console.log(JSON.parse(data));
+  console.log(data);
 
 }
 
