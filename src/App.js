@@ -4,7 +4,7 @@ import SendBtn from "./components/SendBtn";
 
 export default function App() {
   return (
-    <>
+    <main>
       <div className="flex-form">
         <Form formName="Personal Info" formId="personalInfo" />
         <Form formName="Liquid Assets" formId="liquidAssets" />
@@ -21,6 +21,6 @@ export default function App() {
         <Form formName="Large Expenditure" formId="largeExpenditure" />
       </div>
       <SendBtn />
-    </>
+    </main>
   );
 }

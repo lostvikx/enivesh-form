@@ -1,3 +1,8 @@
+:root {
+  --green: rgb(180, 255, 157);
+  --blue: rgb(148, 216, 255);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -16,6 +21,7 @@ body {
 #required-star {
   color: red;
   font-size: 0.8rem;
+  margin-left: 0.25rem;
 }
 
 form {
@@ -24,10 +30,12 @@ form {
   justify-content: center;
   align-items: center;
   gap: 0.75rem;
+  border: 1px solid black;
+  padding: 0.75em;
 }
 
 .flex-form {
-  margin: 2rem;
+  margin: 2rem auto;
   display: flex;
   flex-flow: column;
   gap: 2rem;
@@ -35,26 +43,41 @@ form {
 
 button:hover {
   cursor: pointer;
+  background-color: var(--green);
 }
 
-/* table, th, td {
-  border: 1px solid black;
+button {
+  border: none;
+  color: black;
+  background-color: var(--blue);
+  padding: 0.8em 3em;
+  font-size: 1rem;
+  border-radius: 5px;
 }
 
-th, td {
+label {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  gap: 0.2rem;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+}
+
+input, select {
+  width: 100%;
   padding: 0.25em;
 }
 
-table {
-  border-collapse: collapse;
-  width: 100%;
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
 }
 
-#display-details {
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-} */
-
+.save-data {
+  background-color: var(--green);
+}

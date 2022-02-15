@@ -33,7 +33,7 @@ export default function FormField(props) {
 
   return (
     <label htmlFor={data.inputName}>
-      {data.labelName}<span id="required-star">* </span>
+      <span className="input-label">{data.labelName}<span id="required-star">* </span></span>
       {
         (data.inputType === "select") 
           ? select 
