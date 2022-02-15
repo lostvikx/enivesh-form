@@ -1,6 +1,6 @@
 # Enivesh Form
 
-This is a simple React project that we build, a huge form that transfers user data to the server.
+This is a simple React project that we built. It's basically a huge form that transfers user data to the server and stores it in an sql database.
 
 ### Start
 
