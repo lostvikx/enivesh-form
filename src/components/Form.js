@@ -4,7 +4,7 @@ import fields from "../formFields";
 
 const totalUserData = {};
 
-export default function Form(props) {
+const Form = (props) => {
 
 const handleSubmit = (evt) => {
 
@@ -42,3 +42,5 @@ const handleSubmit = (evt) => {
     </form>
   );
 }
+
+export {Form, totalUserData};

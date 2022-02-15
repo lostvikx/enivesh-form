@@ -1,4 +1,5 @@
 import React from "react";
+import { totalUserData } from "./Form";
 
 const handleClick = async (evt) => {
 
@@ -16,7 +17,7 @@ const handleClick = async (evt) => {
 
   // const data = await res.json();
 
-  // console.log(data);
+  console.log(totalUserData);
 
 }
 
