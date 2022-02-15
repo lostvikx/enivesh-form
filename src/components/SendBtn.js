@@ -5,19 +5,21 @@ const handleClick = async (evt) => {
 
   evt.preventDefault();
 
+  console.log(totalUserData);
+
+  const res = await fetch("/user-data", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(totalUserData)
+  });
+
+  const data = await res.json();
+
   console.log("Data saved to DB 🎉");
 
-  // const res = await fetch("http:localhost:8080/user-data", {
-  //   method: "POST",
-  //   headers: {
-  //     "Content-Type": "application/json"
-  //   },
-  //   body: JSON.stringify(totalUserData)
-  // });
-
-  // const data = await res.json();
-
-  console.log(totalUserData);
+  console.log(JSON.parse(data));
 
 }
 

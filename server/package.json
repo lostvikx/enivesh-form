@@ -1,0 +1,17 @@
+{
+  "name": "enivesh-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "server"
+  ],
+  "author": "Vikram S. Negi",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
