@@ -5,8 +5,6 @@ const handleClick = async (evt) => {
 
   evt.preventDefault();
 
-  console.log(totalUserData);
-
   const res = await fetch("/user-data", {
     method: "POST",
     headers: {
@@ -16,8 +14,6 @@ const handleClick = async (evt) => {
   });
 
   const data = await res.json();
-
-  console.log("Data saved to DB 🎉");
 
   console.log(data);
 

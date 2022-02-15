@@ -20,5 +20,5 @@ app.get("/", (req, res) => {
 
 app.post("/user-data", (req, res) => {
   console.log(req.body);
-  res.json("Got the fucking data!");
+  res.json("Data saved to DB 🎉");
 });

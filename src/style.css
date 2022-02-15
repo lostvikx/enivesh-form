@@ -63,6 +63,7 @@ label {
   align-items: flex-start;
   justify-content: center;
   padding: 0.5rem 1rem;
+  font-size: 1rem;
 }
 
 input, select {
@@ -80,4 +81,10 @@ main {
 
 .save-data {
   background-color: var(--green);
+}
+
+legend {
+  font-size: 1.3rem;
+  padding: 0.5em;
+  text-align: center;
 }
