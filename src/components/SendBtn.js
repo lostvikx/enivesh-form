@@ -7,7 +7,7 @@ const handleClick = async (evt) => {
 
   console.log("Data saved to DB 🎉");
 
-  // const res = await fetch("http:localhost:8080/api/user-data", {
+  // const res = await fetch("http:localhost:8080/user-data", {
   //   method: "POST",
   //   headers: {
   //     "Content-Type": "application/json"
