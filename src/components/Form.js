@@ -43,4 +43,4 @@ const handleSubmit = (evt) => {
   );
 }
 
-export {Form, totalUserData};
+export { Form, totalUserData };

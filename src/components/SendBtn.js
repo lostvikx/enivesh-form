@@ -22,7 +22,7 @@ const handleClick = async (evt) => {
 export default function SendBtn() {
   return (
     <button onClick={handleClick} className="save-data">
-      Send Info To DataBase
+      Submit Data
     </button>
   );
 }
