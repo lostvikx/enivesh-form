@@ -60,7 +60,7 @@ const Form = (props) => {
       <div className="input-fields">
         { inputFields }
       </div>
-      <button type="submit">Save</button>
+      <button type="submit" className="save-btn">Save</button>
     </form>
   );
 }

@@ -1,6 +1,9 @@
 :root {
   --green: rgb(180, 255, 157);
   --blue: rgb(148, 216, 255);
+  --yellow: rgb(255, 253, 148);
+  --red: rgb(230, 106, 106);
+  --text: rgb(44, 44, 44);
 }
 
 * {
@@ -17,6 +20,7 @@ body {
   max-width: 700px;
   margin: 0 auto;
   font-family: sans-serif;
+  color: var(--text);
 }
 
 #required-star {
@@ -43,9 +47,10 @@ form {
   gap: 2rem;
 }
 
-button:hover {
+.save-btn:hover {
   cursor: pointer;
   background-color: var(--green);
+  border: 1px solid black;
 }
 
 button {
@@ -55,6 +60,7 @@ button {
   padding: 0.8em 3em;
   font-size: 1rem;
   border-radius: 5px;
+  border: 1px solid black;
 }
 
 label {
@@ -84,7 +90,12 @@ main {
 }
 
 .save-data {
-  background-color: var(--green);
+  background-color: var(--yellow);
+}
+
+.save-data:hover {
+  cursor: pointer;
+  background-color: var(--red);
 }
 
 legend {
