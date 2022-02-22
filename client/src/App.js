@@ -1,9 +1,13 @@
 import React from "react";
+import Home from "./Home";
 import FullForm from "./FullForm";
-import { Switch, Route, Link } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 
 export default function App() {
   return (
-    <FullForm />
+    <div>
+      <Home />
+      <FullForm />
+    </div>
   );
 }

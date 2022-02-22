@@ -21,6 +21,7 @@ body {
   margin: 0 auto;
   font-family: sans-serif;
   color: var(--text);
+  margin: 2rem;
 }
 
 #required-star {
