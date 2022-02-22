@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import FormField from "./FormField";
 import fields from "../formFields";
 
@@ -20,6 +20,8 @@ const totalUserData = {
 
 const Form = (props) => {
 
+  const [saves, setSaves] = useState(0);
+
   const handleSubmit = (evt) => {
 
     evt.preventDefault();
@@ -39,6 +41,8 @@ const Form = (props) => {
     //   totalUserData[props.formId] = [];
     // }
 
+    setSaves(saves + 1);
+
     // console.log(userData);
     totalUserData[props.formId].push(userData);
     console.log(totalUserData);
@@ -48,9 +52,11 @@ const Form = (props) => {
 
   const inputFields = fields[props.formId].map((field, key) => <FormField data={field} key={key} />);
 
+  const userName = (saves === 0) ? "Self" : (saves === 1) ? "Spouse" : "Other"
+
   return (
     <form onSubmit={handleSubmit}>
-      <legend>{props.formName}:</legend>
+      <legend>{props.formName}: {userName}</legend>
       { inputFields }
       <button type="submit">Save</button>
     </form>

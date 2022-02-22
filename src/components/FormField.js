@@ -27,7 +27,7 @@ export default function FormField(props) {
 
   const handleMarriageStatusChange = (ev) => {
     ev.preventDefault();
-    console.log("change detected", ev.target.value.toLowerCase());
+    // console.log("change detected", ev.target.value.toLowerCase());
 
     const marritalStatus = ev.target.value.toLowerCase();
     const marriageDate = document.getElementById("dateOfMarriage");
