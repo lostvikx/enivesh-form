@@ -33,7 +33,7 @@ const handleClick = async (evt) => {
       console.error(err, "couldn't submit the data!");
     }
   } else {
-    console.log("fill the entire form");
+    // console.log("fill the entire form");
     alertUser("Please fill the entire form! 🤖", "red");
   }
 
