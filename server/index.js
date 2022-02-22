@@ -1,11 +1,12 @@
 #!/usr/bin/env node
 
 const express = require("express");
+const { createFile } = require("./apis/createFile.js");
 
 const app = express();
 
 const HOST = "localhost";
-const PORT = process.env.PORT | 8080;
+const PORT = process.env.PORT || 8080;
 
 app.use(express.json({
   limit: "1mb",
@@ -19,6 +20,12 @@ app.get("/", (req, res) => {
 });
 
 app.post("/user-data", (req, res) => {
-  console.log(req.body);
-  res.json("Data saved to DB 🎉");
+
+  const totalUserData = req.body;
+  // console.log(totalUserData);
+
+  createFile(totalUserData);
+  // console.log(message);
+
+  res.json("Data saved in a JSON file 🎉");
 });

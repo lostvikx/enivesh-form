@@ -61,7 +61,7 @@ const Form = (props) => {
     // adds the form data to the userData object
     for (const data of formData) {
       const label = data[0];
-      const value = data[1];
+      const value = data[1].trim().toLowerCase();
       userData[label] = value;
     }
 

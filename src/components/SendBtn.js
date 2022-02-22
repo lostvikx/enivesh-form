@@ -6,6 +6,7 @@ const handleClick = async (evt) => {
   evt.preventDefault();
   let formPass = true;
 
+  // every form must be filled atleast once, before sending it to the backend
   for (const formId in totalUserData) {
     
     if (totalUserData[formId].length === 0) {
@@ -35,8 +36,6 @@ const handleClick = async (evt) => {
     console.log("fill the entire form");
     alertUser("Please fill the entire form! 🤖", "red");
   }
-
-  // TODO: send email from emailJS
 
 }
 
