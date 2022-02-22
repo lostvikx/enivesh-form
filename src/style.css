@@ -92,6 +92,7 @@ main {
 
 .save-data {
   background-color: var(--yellow);
+  margin: 0 auto 2rem;
 }
 
 .save-data:hover {
