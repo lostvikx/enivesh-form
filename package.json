@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": false,
   "proxy": "http://localhost:8080",
+  "homepage": "",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.2",
@@ -13,6 +14,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b deployment -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
