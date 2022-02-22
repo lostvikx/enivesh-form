@@ -2,35 +2,49 @@ import React from "react";
 import FormField from "./FormField";
 import fields from "../formFields";
 
-const totalUserData = {};
+const totalUserData = {
+  personalInfo: [],
+  liquidAssets: [],
+  investments: [],
+  fixedAssets: [],
+  otherAssets: [],
+  lifeInsurance: [],
+  mediclaim: [],
+  childrenEducation: [],
+  pensionIncome: [],
+  otherIncome: [],
+  rentalRealEstate: [],
+  personalExpenses: [],
+  largeExpenditure: []
+};
 
 const Form = (props) => {
 
-const handleSubmit = (evt) => {
+  const handleSubmit = (evt) => {
 
-  evt.preventDefault();
-  const userData = {};
+    evt.preventDefault();
+    const userData = {};
 
-  // gets the entire data from the input-form
-  const formData = new FormData(evt.target);
+    // gets the entire data from the input-form
+    const formData = new FormData(evt.target);
 
-  // adds the form data to the userData object
-  for (const data of formData) {
-    const label = data[0];
-    const value = data[1];
-    userData[label] = value;
+    // adds the form data to the userData object
+    for (const data of formData) {
+      const label = data[0];
+      const value = data[1];
+      userData[label] = value;
+    }
+
+    // if (totalUserData[props.formId] == null) {
+    //   totalUserData[props.formId] = [];
+    // }
+
+    // console.log(userData);
+    totalUserData[props.formId].push(userData);
+    console.log(totalUserData);
+    evt.target.reset();
+    
   }
-
-  if (totalUserData[props.formId] == null) {
-    totalUserData[props.formId] = [];
-  }
-
-  // console.log(userData);
-  totalUserData[props.formId].push(userData);
-  console.log(totalUserData);
-  evt.target.reset();
-  
-}
 
   const inputFields = fields[props.formId].map((field, key) => <FormField data={field} key={key} />);
 

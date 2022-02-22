@@ -4,18 +4,50 @@ import { totalUserData } from "./Form";
 const handleClick = async (evt) => {
 
   evt.preventDefault();
+  let formPass = true;
 
-  const res = await fetch("/user-data", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify(totalUserData)
-  });
+  for (const formId in totalUserData) {
+    
+    if (totalUserData[formId].length === 0) {
+      // console.log(formId, "is empty");
+      formPass = false;
+      break;
+    }
 
-  const data = await res.json();
+  }
 
-  console.log(data);
+  if (formPass) {
+    try {
+      const res = await fetch("/user-data", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(totalUserData)
+      });
+    
+      const data = await res.json();
+    
+      console.log(data);
+    } catch (err) {
+      console.error(err, "couldn't submit the data!");
+    }
+  } else {
+    console.log("fill the entire form");
+  }
+
+  // TODO: send email from emailJS
+  // const res = await fetch("/user-data", {
+  //   method: "POST",
+  //   headers: {
+  //     "Content-Type": "application/json"
+  //   },
+  //   body: JSON.stringify(totalUserData)
+  // });
+
+  // const data = await res.json();
+
+  // console.log(data);
 
 }
 

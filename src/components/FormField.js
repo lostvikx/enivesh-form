@@ -25,11 +25,39 @@ export default function FormField(props) {
     options = null;
   }
 
-  const select = (
-    <select id={data.inputName} name={data.inputName} defaultValue="">
-      {options}
-    </select>
-  );
+  const handleMarriageStatusChange = (ev) => {
+    ev.preventDefault();
+    console.log("change detected", ev.target.value.toLowerCase());
+
+    const marritalStatus = ev.target.value.toLowerCase();
+    const marriageDate = document.getElementById("dateOfMarriage");
+
+    if (marritalStatus === "married") {
+      marriageDate.disabled = false;
+    } else {
+      marriageDate.disabled = true;
+    }
+  }
+
+  // make field required
+
+  let select = null;
+
+  if (data.inputName === "maritalStatus") {
+    select = (
+      <select id={data.inputName} name={data.inputName} defaultValue="" onChange={handleMarriageStatusChange}>
+        {options}
+      </select>
+    );
+  } else {
+    select = (
+      <select id={data.inputName} name={data.inputName} defaultValue="">
+        {options}
+      </select>
+    );
+  }
+
+  // make field required
 
   return (
     <label htmlFor={data.inputName}>
@@ -37,7 +65,9 @@ export default function FormField(props) {
       {
         (data.inputType === "select") 
           ? select 
-          : <input type={data.inputType} name={data.inputName} id={data.inputName} />
+          : (data.inputName === "dateOfMarriage") 
+            ? <input type={data.inputType} name={data.inputName} id={data.inputName} disabled/>
+            : <input type={data.inputType} name={data.inputName} id={data.inputName} />
       }
     </label>
   );
