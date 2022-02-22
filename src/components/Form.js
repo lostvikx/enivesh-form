@@ -55,9 +55,11 @@ const Form = (props) => {
   const userName = (saves === 0) ? "Self" : (saves === 1) ? "Spouse" : "Other"
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} id={props.formId}>
       <legend>{props.formName}: {userName}</legend>
-      { inputFields }
+      <div className="input-fields">
+        { inputFields }
+      </div>
       <button type="submit">Save</button>
     </form>
   );

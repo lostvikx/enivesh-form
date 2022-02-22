@@ -16,6 +16,7 @@ html {
 body {
   max-width: 700px;
   margin: 0 auto;
+  font-family: sans-serif;
 }
 
 #required-star {
@@ -32,6 +33,7 @@ form {
   gap: 0.75rem;
   border: 1px solid black;
   padding: 0.75em;
+  /* border-radius: 5px; */
 }
 
 .flex-form {
@@ -58,16 +60,18 @@ button {
 label {
   display: flex;
   flex-flow: column nowrap;
-  width: 100%;
+  /* width: 100%; */
   gap: 0.2rem;
   align-items: flex-start;
   justify-content: center;
   padding: 0.5rem 1rem;
   font-size: 1rem;
+  border: dashed 1.5px black;
+  border-radius: 5px;
 }
 
 input, select {
-  width: 100%;
+  /* width: 100%; */
   padding: 0.25em;
 }
 
@@ -87,4 +91,13 @@ legend {
   font-size: 1.3rem;
   padding: 0.5em;
   text-align: center;
+}
+
+.input-fields {
+  /* width: 100%; */
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
 }

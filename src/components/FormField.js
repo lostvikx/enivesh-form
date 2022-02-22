@@ -67,7 +67,9 @@ export default function FormField(props) {
           ? select 
           : (data.inputName === "dateOfMarriage") 
             ? <input type={data.inputType} name={data.inputName} id={data.inputName} disabled required />
-            : <input type={data.inputType} name={data.inputName} id={data.inputName} required />
+            : (data.inputType === "number")
+              ? <input type={data.inputType} name={data.inputName} id={data.inputName} required placeholder="Number" />
+              : <input type={data.inputType} name={data.inputName} id={data.inputName} required placeholder="Text" />
       }
     </label>
   );
