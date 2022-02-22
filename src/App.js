@@ -1,10 +1,15 @@
 import React from "react";
-import {Form} from "./components/Form";
+import { Form } from "./components/Form";
 import SendBtn from "./components/SendBtn";
+
+const hiddenStyle = {
+  visibility: "hidden"
+};
 
 export default function App() {
   return (
     <main>
+      <div id="save-message" style={hiddenStyle}></div>
       <div className="flex-form">
         <Form formName="Personal Info" formId="personalInfo" />
         <Form formName="Liquid Assets" formId="liquidAssets" />

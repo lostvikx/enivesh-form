@@ -35,7 +35,7 @@ form {
   justify-content: center;
   align-items: center;
   gap: 0.75rem;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   padding: 0.75em;
   /* border-radius: 5px; */
 }
@@ -95,7 +95,7 @@ main {
 
 .save-data:hover {
   cursor: pointer;
-  background-color: var(--red);
+  background-color: var(--green);
 }
 
 legend {
@@ -111,4 +111,13 @@ legend {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+}
+
+#save-message {
+  position: fixed;
+  top: 1rem;
+  margin: auto;
+  background-color: var(--green);
+  padding: 1em 2em;
+  border-radius: 5px;
 }
