@@ -45,13 +45,13 @@ export default function FormField(props) {
 
   if (data.inputName === "maritalStatus") {
     select = (
-      <select id={data.inputName} name={data.inputName} defaultValue="" onChange={handleMarriageStatusChange}>
+      <select id={data.inputName} name={data.inputName} defaultValue="" onChange={handleMarriageStatusChange} required>
         {options}
       </select>
     );
   } else {
     select = (
-      <select id={data.inputName} name={data.inputName} defaultValue="">
+      <select id={data.inputName} name={data.inputName} defaultValue="" required>
         {options}
       </select>
     );
@@ -66,8 +66,8 @@ export default function FormField(props) {
         (data.inputType === "select") 
           ? select 
           : (data.inputName === "dateOfMarriage") 
-            ? <input type={data.inputType} name={data.inputName} id={data.inputName} disabled/>
-            : <input type={data.inputType} name={data.inputName} id={data.inputName} />
+            ? <input type={data.inputType} name={data.inputName} id={data.inputName} disabled required />
+            : <input type={data.inputType} name={data.inputName} id={data.inputName} required />
       }
     </label>
   );
