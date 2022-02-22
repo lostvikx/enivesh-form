@@ -47,6 +47,14 @@ const Form = (props) => {
     evt.preventDefault();
     const userData = {};
 
+    const tickMark = evt.target.lastChild.lastChild;
+    const saveButton = evt.target.lastChild;
+    
+    if (tickMark.style.display !== "inline") {
+      saveButton.title = "Data is saved";
+      tickMark.style.display = "inline";
+    }
+    
     // gets the entire data from the input-form
     const formData = new FormData(evt.target);
 
@@ -77,7 +85,7 @@ const Form = (props) => {
       <div className="input-fields">
         { inputFields }
       </div>
-      <button type="submit" className="save-btn">Save</button>
+      <button type="submit" className="save-btn">Save <span className="tick-mark">&#10003;</span></button>
     </form>
   );
 }
