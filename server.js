@@ -22,8 +22,8 @@ app.post("/user-data", (req, res) => {
   const totalUserData = req.body;
   console.log(totalUserData);
 
-  // const message = createFile(totalUserData);
-  // console.log(message);
+  const message = createFile(totalUserData);
+  console.log(message);
 
   res.json("Data saved in a JSON file 🎉");
 });

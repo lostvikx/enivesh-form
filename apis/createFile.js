@@ -17,6 +17,8 @@ const createFile = (data) => {
   } catch (err) {
     console.error(err, "createFile failed!");
   }
+
+  return "Success!";
   
 }
 
