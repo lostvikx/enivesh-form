@@ -69,7 +69,7 @@ const Form = (props) => {
 
     // console.log(userData);
     totalUserData[props.formId].push(userData);
-    console.log(totalUserData);
+    // console.log(totalUserData);
 
     alertUser(`${props.formName} for '${userName}' saved successfully 🎉`, "green");
 

@@ -51,6 +51,8 @@ const handleClick = async (evt) => {
     //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior)
     emailjs.sendForm('service_wv9fgeb', 'template_j5uu2sf', evt.target, 'user_pvGioTjQ0ItUmSUvav5qf')
       .then((result) => window.location.href = "/thanks", (error) => console.error(error));
+  } else {
+    alertUser("Please fill the entire form! 🤖", "red");
   }
 
 }
