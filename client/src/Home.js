@@ -1,10 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
     <div className="main-home">
-      <h1>Welcome to the Enivesh Goal Organizer Webpage 👋</h1>
+      <h1>Welcome to the ENIVESH Goal Organizer Webpage 👋</h1>
       <p>This site was built with the purpose of using the form data to determine our customers' financial postion.</p>
       <h2>Intructions:</h2>
       <ul>
