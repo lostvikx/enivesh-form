@@ -9,9 +9,9 @@ export default function App() {
     <BrowserRouter>
       <div>
         <Routes>
-          <Route exact path="/" element={<Home />}></Route>
-          <Route exact path="/form" element={<FullForm />}></Route>
-          <Route exact path="/thanks" element={<Thanks />}></Route>
+          <Route exact path="/enivesh-form/" element={<Home />}></Route>
+          <Route exact path="/enivesh-form/form" element={<FullForm />}></Route>
+          <Route exact path="/enivesh-form/thanks" element={<Thanks />}></Route>
         </Routes>
       </div>
     </BrowserRouter>

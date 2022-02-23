@@ -16,7 +16,7 @@ export default function Home() {
         <li>Don't leave any fields blank, type <strong>0</strong> or <strong>"None"</strong></li>
         <li>Finally, click on the <code className="submitFormBtn">Submit Form</code> button to complete the process</li>
       </ul>
-      <Link to="/form" className="fill-form-btn">Fill the form</Link>
+      <Link to="/enivesh-form/form" className="fill-form-btn">Fill the form</Link>
     </div>
   );
 }
