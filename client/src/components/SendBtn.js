@@ -29,11 +29,11 @@ const handleClick = async (evt) => {
       const data = await res.json();
     
       console.log(data);
+      window.location.href = "/thanks";
     } catch (err) {
       console.error(err, "couldn't submit the data!");
     }
   } else {
-    // console.log("fill the entire form");
     alertUser("Please fill the entire form! 🤖", "red");
   }
 
