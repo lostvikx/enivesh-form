@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/enivesh-form/static/css/main.57c7baed.css",
-    "main.js": "/enivesh-form/static/js/main.eaa23dcb.js",
+    "main.js": "/enivesh-form/static/js/main.b05f0120.js",
     "index.html": "/enivesh-form/index.html",
     "main.57c7baed.css.map": "/enivesh-form/static/css/main.57c7baed.css.map",
-    "main.eaa23dcb.js.map": "/enivesh-form/static/js/main.eaa23dcb.js.map"
+    "main.b05f0120.js.map": "/enivesh-form/static/js/main.b05f0120.js.map"
   },
   "entrypoints": [
     "static/css/main.57c7baed.css",
-    "static/js/main.eaa23dcb.js"
+    "static/js/main.b05f0120.js"
   ]
 }
