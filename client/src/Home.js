@@ -13,6 +13,7 @@ export default function Home() {
         <li>Clicking on the <code>Save</code> sends you a notifications</li>
         <li>You can add additional information after clicking on the save button</li>
         <li>You may see a tick next to the <code>Save</code> button, this shows that you have filled this form before</li>
+        <li>Don't leave any fields blank, type <strong>0</strong> or <strong>"None"</strong></li>
         <li>Finally, click on the <code className="submitFormBtn">Submit Form</code> button to complete the process</li>
       </ul>
       <Link to="/form" className="fill-form-btn">Fill the form</Link>

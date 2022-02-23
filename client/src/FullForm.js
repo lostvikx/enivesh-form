@@ -16,6 +16,7 @@ export default function FullForm() {
         <Form formName="Investments" formId="investments" />
         <Form formName="Fixed Assets" formId="fixedAssets" />
         <Form formName="Other Assets" formId="otherAssets" />
+        <Form formName="Liabilities" formId="liabilities" />
         <Form formName="Life Insurance" formId="lifeInsurance" />
         <Form formName="Mediclaim" formId="mediclaim" />
         <Form formName="Children &amp; College Planning" formId="childrenEducation" />

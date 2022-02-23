@@ -157,6 +157,128 @@ const fields = {
       inputName: "nonLiquid"
     },
   ],
+  liabilities: [
+    {
+      labelName: "Mortgage on Home",
+      inputType: "number",
+      inputName: "mortgageHome"
+    },
+    {
+      labelName: "Interest on Mortage",
+      inputType: "number",
+      inputName: "mortgageInterest"
+    },
+    {
+      labelName: "Mortage Monthly Payment",
+      inputType: "number",
+      inputName: "mortgagePayment"
+    },
+    {
+      labelName: "Mortage Term",
+      inputType: "number",
+      inputName: "mortgageTerm"
+    },
+    {
+      labelName: "Car Loans",
+      inputType: "number",
+      inputName: "carLoans"
+    },
+    {
+      labelName: "Interest on Car",
+      inputType: "number",
+      inputName: "carInterest"
+    },
+    {
+      labelName: "Car Monthly Payment",
+      inputType: "number",
+      inputName: "carPayment"
+    },
+    {
+      labelName: "Car Loan Term",
+      inputType: "number",
+      inputName: "carLoanTerm"
+    },
+    {
+      labelName: "Creditors",
+      inputType: "number",
+      inputName: "creditors"
+    },
+    {
+      labelName: "Interest on Creditors",
+      inputType: "number",
+      inputName: "creditorsInterest"
+    },
+    {
+      labelName: "Creditors Monthly Payment",
+      inputType: "number",
+      inputName: "creditorsPayment"
+    },
+    {
+      labelName: "Creditors Term",
+      inputType: "number",
+      inputName: "creditorsTerm"
+    },
+    {
+      labelName: "Investment Loan",
+      inputType: "number",
+      inputName: "investmentLoans"
+    },
+    {
+      labelName: "Interest on Investment Loan",
+      inputType: "number",
+      inputName: "investmentInterest"
+    },
+    {
+      labelName: "Investment Loan Monthly Payment",
+      inputType: "number",
+      inputName: "investmentPayment"
+    },
+    {
+      labelName: "Investment Loan Term",
+      inputType: "number",
+      inputName: "investmentTerm"
+    },
+    {
+      labelName: "Private/Family Loans",
+      inputType: "number",
+      inputName: "privateLoans"
+    },
+    {
+      labelName: "Interest on Private Loan",
+      inputType: "number",
+      inputName: "privateInterest"
+    },
+    {
+      labelName: "Private Loan Monthly Payment",
+      inputType: "number",
+      inputName: "privatePayment"
+    },
+    {
+      labelName: "Private Loan Term",
+      inputType: "number",
+      inputName: "privateTerm"
+    },
+    {
+      labelName: "Other Liabilities",
+      inputType: "number",
+      inputName: "otherLiabilities"
+    },
+    {
+      labelName: "Interest on Other Liabilities",
+      inputType: "number",
+      inputName: "otherInterest"
+    },
+    {
+      labelName: "Other Liabilities Monthly Payment",
+      inputType: "number",
+      inputName: "otherPayment"
+    },
+    {
+      labelName: "Other Liabilities Term",
+      inputType: "number",
+      inputName: "otherTerm"
+    },
+  ],
   lifeInsurance: [
     {
       labelName: "Term | ULIP | Traditional",
@@ -240,7 +362,7 @@ const fields = {
     },
     {
       labelName: "Course Fee",
-      inputType: "date",
+      inputType: "number",
       inputName: "childCourseFee"
     },
   ],
