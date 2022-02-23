@@ -2,7 +2,7 @@
   "name": "enivesh-form-react",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://lostvikx.github.io/enivesh-form",
+  "homepage": "https://lostvikx.github.io/enivesh-form/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.2",

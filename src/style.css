@@ -69,19 +69,27 @@ button {
 label {
   display: flex;
   flex-flow: column nowrap;
-  /* width: 100%; */
+  min-width: 45%;
   gap: 0.2rem;
   align-items: flex-start;
   justify-content: center;
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  /* border: dashed 1.5px black; */
+  border: dashed 1.5px black;
   border-radius: 5px;
 }
 
 input, select {
-  /* width: 100%; */
+  width: 100%;
   padding: 0.25em;
+}
+
+@media only screen and (max-width: 600px) {
+  
+  label {
+    width: 100%;
+  }
+
 }
 
 main {
@@ -109,7 +117,7 @@ legend {
 }
 
 .input-fields {
-  /* width: 100%; */
+  width: 100%;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
