@@ -37,7 +37,7 @@ form {
   justify-content: center;
   align-items: center;
   gap: 0.75rem;
-  /* border: 1px solid black; */
+  border: 1px solid black;
   padding: 0.75em;
   /* border-radius: 5px; */
 }
@@ -202,4 +202,8 @@ a {
 
 .back-home:hover {
   background-color: var(--yellow);
+}
+
+.submit-entire-form {
+  border: none;
 }

@@ -63,10 +63,10 @@ export default function SendBtn() {
     //   Submit Form
     // </button>
 
-    <form onSubmit={handleClick}>
+    <form onSubmit={handleClick} className="submit-entire-form">
       <textarea id="totalUserData" name="totalUserData" hidden />
       <input type="text" name="fullName" hidden id="fullName" />
-      <button type="submit" className="save-data">Send Mail</button>
+      <button type="submit" className="save-data">Submit Form</button>
     </form>
   );
 }
