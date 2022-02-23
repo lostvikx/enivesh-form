@@ -8,6 +8,7 @@ const totalUserData = {
   investments: [],
   fixedAssets: [],
   otherAssets: [],
+  liabilities: [],
   lifeInsurance: [],
   mediclaim: [],
   childrenEducation: [],
