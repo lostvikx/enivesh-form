@@ -11,12 +11,12 @@ export default function FullForm() {
     <main>
       <div id="save-message" style={hiddenStyle}></div>
       <div className="flex-form">
-        <Form formName="Personal Info" formId="personalInfo" />
-        <Form formName="Liquid Assets" formId="liquidAssets" />
-        <Form formName="Investments" formId="investments" />
-        <Form formName="Fixed Assets" formId="fixedAssets" />
-        <Form formName="Other Assets" formId="otherAssets" />
-        <Form formName="Liabilities" formId="liabilities" />
+        <Form formName="Personal Info" formId="personalInfo" self={true} />
+        <Form formName="Liquid Assets" formId="liquidAssets" self={true} />
+        <Form formName="Investments" formId="investments" self={true} />
+        <Form formName="Fixed Assets" formId="fixedAssets" self={true} />
+        <Form formName="Other Assets" formId="otherAssets" self={true} />
+        <Form formName="Liabilities" formId="liabilities" self={true} />
         <Form formName="Life Insurance" formId="lifeInsurance" />
         <Form formName="Mediclaim" formId="mediclaim" />
         <Form formName="Children &amp; College Planning" formId="childrenEducation" />

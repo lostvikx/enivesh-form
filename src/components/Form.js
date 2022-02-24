@@ -41,7 +41,14 @@ const alertUser = (message, color, time=3000) => {
 const Form = (props) => {
 
   const [saves, setSaves] = useState(0);
-  const userName = (saves === 0) ? "Self" : (saves === 1) ? "Spouse" : "Other";
+
+  let userName = null;
+
+  if (props.self === true) {
+    userName = (saves === 0) ? "Self" : (saves === 1) ? "Spouse" : "Other";
+  } else {
+    userName = `#${saves + 1}`;
+  }
 
   const handleSubmit = (evt) => {
 
